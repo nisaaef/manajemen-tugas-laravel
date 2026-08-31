@@ -66,4 +66,4 @@ _(Tambahkan screenshot tampilan dashboard Admin dan Karyawan di sini)_
 
 ## 📄 Lisensi
 
-Project ini dibuat untuk keperluan pembelajaran dan portofolio.
+Project ini dibuat untuk keperluan pembelajaran
