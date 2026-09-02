@@ -64,6 +64,9 @@ Aplikasi dapat diakses melalui `http://127.0.0.1:8000`.
 
 _(Tambahkan screenshot tampilan dashboard Admin dan Karyawan di sini)_
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0faecb93-5a9b-4d10-adc6-a2ba6b242002" />
+
+
 ## 📄 Lisensi
 
 Project ini dibuat untuk keperluan pembelajaran
