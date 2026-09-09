@@ -72,4 +72,4 @@ Dashboard Karyawan
 
 ## 📄 Lisensi
 
-Project ini dibuat untuk keperluan pembelajaran
+Project ini dibuat untuk keperluan pembelajaran dan portofolio
