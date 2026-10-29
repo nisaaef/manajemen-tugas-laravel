@@ -1,75 +1,77 @@
-# Manajemen Tugas Karyawan (Laravel)
+# Employee Task Management (Laravel)
 
-Sistem admin berbasis web untuk mengelola data karyawan dan status penugasan mereka. Dibangun menggunakan **Laravel**, dengan dua level akses pengguna: **Admin** dan **Karyawan**.
+A web-based admin system for managing employee data and task assignment status. Built with **Laravel**, with two user access levels: **Admin** and **Employee**.
 
-## 📋 Deskripsi
+## 📋 Description
 
-Aplikasi ini membantu perusahaan memantau apakah setiap karyawan sudah ditugaskan atau belum untuk suatu pekerjaan/tugas tertentu. Admin memiliki kontrol penuh untuk mengelola data karyawan dan status penugasan, sementara karyawan dapat melihat informasi terkait tugas mereka sendiri.
+This application helps companies monitor whether each employee has been assigned to a specific job or task. Admins have full control over employee data and assignment status, while employees can view information related to their own tasks.
 
-## ✨ Fitur
+## ✨ Features
 
-- **Manajemen Data Karyawan** — tambah, lihat, ubah, dan hapus data karyawan.
-- **Status Penugasan** — menandai apakah karyawan sudah ditugaskan atau belum untuk suatu tugas.
+- **Employee Data Management** — add, view, edit, and delete employee records.
+- **Assignment Status** — mark whether an employee has been assigned to a task or not.
 - **Role-Based Access Control**:
-  - **Admin**: akses penuh — dapat melihat dan mengubah seluruh data, termasuk melakukan perubahan saat status penugasan diperbarui.
-  - **Karyawan**: akses terbatas — dapat melihat data dan status penugasan yang relevan dengan dirinya.
-- **Autentikasi Pengguna** — sistem login terpisah untuk Admin dan Karyawan.
+  - **Admin**: full access — can view and modify all data, including making changes when assignment status is updated.
+  - **Employee**: limited access — can view data and assignment status relevant to themselves.
+- **User Authentication** — separate login system for Admin and Employee.
 
 ## 🛠️ Tech Stack
 
 - **Backend**: Laravel (PHP)
 - **Database**: MySQL
-- **Frontend**: Blade Templating, (tambahkan Tailwind/Bootstrap jika dipakai)
+- **Frontend**: Blade Templating, (add Tailwind/Bootstrap if used)
 
-## 🚀 Instalasi & Menjalankan Secara Lokal
+## 🚀 Installation & Running Locally
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/annisaaef24/manajemen-tugas-laravel.git
 cd manajemen-tugas-laravel
 
-# Install dependency PHP
+# Install PHP dependencies
 composer install
 
-# Salin file environment
+# Copy the environment file
 cp .env.example .env
 
-# Generate application key
+# Generate the application key
 php artisan key:generate
 
-# Atur koneksi database di file .env, lalu jalankan migrasi
+# Set the database connection in .env, then run the migrations
 php artisan migrate
 
-# (Opsional) isi data awal
+# (Optional) seed initial data
 php artisan db:seed
 
-# Install dependency frontend (jika menggunakan Vite/NPM)
+# Install frontend dependencies (if using Vite/NPM)
 npm install
 npm run dev
 
-# Jalankan server lokal
+# Start the local server
 php artisan serve
 ```
 
-Aplikasi dapat diakses melalui `http://127.0.0.1:8000`.
+The application can be accessed at `http://127.0.0.1:8000`.
 
-## 👥 Role Pengguna
+## 👥 User Roles
 
-| Role      | Akses                                                             |
-|-----------|--------------------------------------------------------------------|
-| Admin     | Kelola seluruh data karyawan & status penugasan, dapat mengubah data kapan pun diperlukan |
-| Karyawan  | Melihat data dan status penugasan miliknya sendiri                |
+| Role     | Access                                                                                          |
+|----------|--------------------------------------------------------------------------------------------------|
+| Admin    | Manage all employee data and assignment status, and can modify data whenever needed              |
+| Employee | View their own data and assignment status                                                        |
 
-## 📸 Screenshot
+## 📸 Capture
 
-_(Tambahkan screenshot tampilan dashboard Admin dan Karyawan di sini)_
-Dashboard Admin
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0faecb93-5a9b-4d10-adc6-a2ba6b242002" />
-Dashboard Karyawan
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/062d340f-7933-40de-b141-6ef03cda5fd3" />
+<img width="1366" height="2672" alt="screencapture-manajemen-tugas-test-2026-10-29-15_30_55" src="https://github.com/user-attachments/assets/740c3ebc-c26b-4f75-af03-ea2124e8a56c" />
 
+Admin Dashboard
+<img width="1366" height="641" alt="screencapture-manajemen-tugas-test-dashboard-2026-10-29-15_31_50" src="https://github.com/user-attachments/assets/5febd9f9-3b62-4d02-8abf-1cb2fd64a969" />
 
 
-## 📄 Lisensi
+Employee Dashboard
+<img width="1366" height="641" alt="screencapture-manajemen-tugas-test-dashboard-2026-10-29-15_32_25" src="https://github.com/user-attachments/assets/c2e14e81-747b-4da4-9c36-3e4e232b03ee" />
 
-Project ini dibuat untuk keperluan pembelajaran dan portofolio
+
+## 📄 License
+
+This project was created for learning and portfolio purposes.
